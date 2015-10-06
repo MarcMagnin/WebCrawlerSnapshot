@@ -35,6 +35,8 @@ page.onResourceTimeout = function (request) {
     console.log('Response (#' + request.id + '): ' + JSON.stringify(request));
     phantom.exit();
 };
+// console.log(args[1]);
+// phantom.exit();
 page.open(args[1], function (status) {
     //console.log('Status: ' + status);
 });

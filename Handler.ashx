@@ -28,7 +28,7 @@ public class Handler : IHttpHandler
 
         var query = context.Request.QueryString["url"];
         //context.Response.Write(query);
-        t.Run("echo-html.js", new string[] { query, "--output-encoding=utf-8" });
+        t.Run("echo-html.js", new string[] { query });
     }
 
     public bool IsReusable
